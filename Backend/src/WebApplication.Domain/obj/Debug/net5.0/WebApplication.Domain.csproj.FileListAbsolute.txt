@@ -1,0 +1,12 @@
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\bin\Debug\net5.0\WebApplication.Domain.deps.json
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\bin\Debug\net5.0\WebApplication.Domain.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\bin\Debug\net5.0\ref\WebApplication.Domain.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\bin\Debug\net5.0\WebApplication.Domain.pdb
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\obj\Debug\net5.0\WebApplication.Domain.csprojAssemblyReference.cache
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\obj\Debug\net5.0\WebApplication.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\obj\Debug\net5.0\WebApplication.Domain.AssemblyInfoInputs.cache
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\obj\Debug\net5.0\WebApplication.Domain.AssemblyInfo.cs
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\obj\Debug\net5.0\WebApplication.Domain.csproj.CoreCompileInputs.cache
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\obj\Debug\net5.0\WebApplication.Domain.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\obj\Debug\net5.0\ref\WebApplication.Domain.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Domain\obj\Debug\net5.0\WebApplication.Domain.pdb

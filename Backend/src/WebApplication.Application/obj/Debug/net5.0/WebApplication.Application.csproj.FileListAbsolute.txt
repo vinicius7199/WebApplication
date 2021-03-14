@@ -1,0 +1,17 @@
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\bin\Debug\net5.0\WebApplication.Application.deps.json
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\bin\Debug\net5.0\WebApplication.Application.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\bin\Debug\net5.0\ref\WebApplication.Application.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\bin\Debug\net5.0\WebApplication.Application.pdb
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\obj\Debug\net5.0\WebApplication.Application.csprojAssemblyReference.cache
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\obj\Debug\net5.0\WebApplication.Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\obj\Debug\net5.0\WebApplication.Application.AssemblyInfoInputs.cache
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\obj\Debug\net5.0\WebApplication.Application.AssemblyInfo.cs
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\obj\Debug\net5.0\WebApplication.Application.csproj.CoreCompileInputs.cache
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\obj\Debug\net5.0\WebApplication.Application.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\obj\Debug\net5.0\ref\WebApplication.Application.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\obj\Debug\net5.0\WebApplication.Application.pdb
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\bin\Debug\net5.0\WebApplication.Domain.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\bin\Debug\net5.0\WebApplication.Persistence.dll
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\bin\Debug\net5.0\WebApplication.Domain.pdb
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\bin\Debug\net5.0\WebApplication.Persistence.pdb
+F:\Program Files (x86)\Microsoft\ws-vs-2019\WebApplication\Backend\src\WebApplication.Application\obj\Debug\net5.0\WebApplication.Application.csproj.CopyComplete
