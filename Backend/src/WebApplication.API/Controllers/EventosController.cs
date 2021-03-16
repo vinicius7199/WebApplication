@@ -1,12 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using WebApplication.Persistence;
 using WebApplication.Domain;
-using WebApplication.Persistence.Contexto;
 using WebApplication.Application.Contratos;
 using Microsoft.AspNetCore.Http;
 
