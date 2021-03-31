@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RUTiYcZxPGxKaWmCbH/eYvqsssRNmAS1NdluvOmCav5CAm7k4tC+3TT0Whz53IqAjkCePvFNE2fXweBcaOXQuQ==",
+  "dgSpecHash": "5kV63JZFi4/hq0VFo1I0VSjHOOeIcqQZfG0m1EDAGrehLiAVQ4O5azLnfudzLyrwZOm/ItospT8bu91N2DKc4w==",
   "success": true,
   "projectFilePath": "F:\\Program Files (x86)\\Microsoft\\ws-vs-2019\\WebApplication\\Backend\\src\\WebApplication.Application\\WebApplication.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Vinicius\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Vinicius\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.2\\microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
@@ -23,7 +25,8 @@
     "C:\\Users\\Vinicius\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Vinicius\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\Vinicius\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+    "C:\\Users\\Vinicius\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\Vinicius\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -10,6 +10,8 @@ using WebApplication.Application.Contratos;
 using WebApplication.Persistence;
 using WebApplication.Persistence.Contexto;
 using WebApplication.Persistence.Contratos;
+using AutoMapper;
+using System;
 
 namespace WebApplication
 {
@@ -32,6 +34,8 @@ namespace WebApplication
                     .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = 
                         Newtonsoft.Json.ReferenceLoopHandling.Ignore
                     );
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<IEventoService, EventoService>();
             services.AddScoped<IGeralPersist, GeralPersist>();
