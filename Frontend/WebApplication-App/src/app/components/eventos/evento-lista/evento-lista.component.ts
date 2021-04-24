@@ -18,6 +18,7 @@ export class EventoListaComponent implements OnInit {
   public eventos: Evento[] = [];
   public eventosFiltrados: Evento[] = [];
   public exibirImagem = true;
+  public eventoId = 0;
 
   private _filtroLista: string = '';
 
@@ -39,6 +40,7 @@ export class EventoListaComponent implements OnInit {
   }
 
   constructor(
+    // tslint:disable-next-line: no-shadowed-variable
     private EventoService: EventoService,
     private modalService: BsModalService,
     private toastr: ToastrService,
@@ -65,17 +67,34 @@ export class EventoListaComponent implements OnInit {
       },
       error: (error: any) => {
         console.log(error),
-        this.toastr.error('Erro ao Carregar os Eventos','Erro!')
+        this.toastr.error('Erro ao Carregar os Eventos', 'Erro!');
+        this.spinner.hide();
       },
       complete: () => this.spinner.hide()
     });
   }
-  openModal(template: TemplateRef<any>): void {
+  openModal(event: any, template: TemplateRef<any>, eventoId: number): void {
+    event.stopPropagation();
+    this.eventoId = eventoId;
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
   confirm(): void {
     this.modalRef.hide();
-    this.toastr.success('O Evento foi deletado com sucesso.', 'Deletado!');
+    this.spinner.show();
+
+    this.EventoService.deleteEvento(this.eventoId).subscribe({
+      next: (result: any) => {
+        this.toastr.success('O Evento foi deletado com sucesso.', 'Deletado!');
+        this.spinner.hide();
+        this.getEventos();
+      },
+      error: (error: any) => {
+        this.toastr.error(`Erro ao tentar deletar o evento: ${this.eventoId}`, 'Erro!')
+        console.log(error);
+        this.spinner.hide();
+      },
+      complete: () => this.spinner.hide(),
+    });
   }
   decline(): void {
     this.modalRef.hide();

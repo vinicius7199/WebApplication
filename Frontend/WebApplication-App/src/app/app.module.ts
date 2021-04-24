@@ -30,6 +30,13 @@ import { UserComponent } from './components/user/user.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { RegistrationComponent } from './components/user/registration/registration.component';
 import { PerfilComponent } from './components/user/perfil/perfil.component';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
+import { defineLocale } from 'ngx-bootstrap/chronos';
+import { ptBrLocale } from 'ngx-bootstrap/locale';
+defineLocale('pt-br', ptBrLocale);
 
 @NgModule({
   declarations: [
@@ -59,13 +66,15 @@ import { PerfilComponent } from './components/user/perfil/perfil.component';
     TooltipModule.forRoot(),
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
+    NgxSkeletonLoaderModule.forRoot(),
     ToastrModule.forRoot({
       timeOut: 5000,
       positionClass: 'toast-bottom-right',
       preventDuplicates: true,
       progressBar: true
     }),
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [EventoService],
   bootstrap: [AppComponent],
