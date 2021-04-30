@@ -109,9 +109,9 @@ namespace WebApplication.Controllers
         {
             try
             {
-                return await _eventoService.DeleteEvento(id) ? 
-                       Ok("Deletado") : 
-                       BadRequest("Evento não deletado");
+                return await _eventoService.DeleteEvento(id) 
+                    ?  Ok(new { message = "Deletado" }) 
+                    : throw new Exception("Evento não deletado");
             }
             catch (Exception ex)
             {
