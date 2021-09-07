@@ -1,4 +1,6 @@
 import {
+  AbstractControl,
+  FormArray,
   FormBuilder,
   FormControl,
   FormGroup,
@@ -13,6 +15,7 @@ import { Evento } from '@app/models/Evento';
 
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
+import { Lote } from '@app/models/Lote';
 
 @Component({
   selector: 'app-evento-detalhe',
@@ -24,6 +27,14 @@ export class EventoDetalheComponent implements OnInit {
   form: FormGroup;
   isLoading: boolean = false;
   estadoSalvar = 'post';
+  isEditing: boolean = false;
+
+  get EditingMode(): boolean {
+    return this.isEditing;
+  }
+  get lotes(): FormArray {
+    return this.form.get('lotes') as FormArray
+  }
 
   get f(): any {
     return this.form.controls;
@@ -54,6 +65,7 @@ export class EventoDetalheComponent implements OnInit {
 
     if (eventoIdParam !== null) {
       this.estadoSalvar = 'put';
+      this.isEditing = true;
       this.spinner.show();
       this.eventoService.getElementoById(+eventoIdParam).subscribe({
         next: (evento: Evento) => {
@@ -91,14 +103,30 @@ export class EventoDetalheComponent implements OnInit {
       telefone: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       imagemURL: ['', Validators.required],
+      lotes: this.fb.array([])
     });
+  }
+
+  adicionarLote(): void {
+    this.lotes.push(this.criarLote({id: 0} as Lote));
+  }
+
+  criarLote(lote: Lote): FormGroup {
+    return this.fb.group({
+      id: [lote.id],
+      nome: [lote.id, Validators.required],
+      quantidade: [lote.quantidade, Validators.required],
+      preco: [lote.preco, Validators.required],
+      dataInicio: [lote.dataInicio],
+      dataFim: [lote.dataFim]
+    })
   }
 
   public resetForm(): void {
     this.form.reset();
   }
 
-  public cssValidator(campoForm: FormControl): any {
+  public cssValidator(campoForm: FormControl | AbstractControl): any {
     return { 'is-invalid': campoForm.errors && campoForm.touched };
   }
 
@@ -111,7 +139,8 @@ export class EventoDetalheComponent implements OnInit {
 
       this.eventoService[this.estadoSalvar](this.evento).subscribe({
         next: (result: any) => {
-          this.toastr.success('Evento salvo com sucesso!', 'Sucesso!');
+          this.toastr.success('Evento salvo com sucesso!', 'Sucesso!'),
+          this.isEditing = true;
         },
         error: (error: any) => {
           console.error(error);
